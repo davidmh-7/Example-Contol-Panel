@@ -67,7 +67,8 @@ function renderCalendar(year, month) {
         calendarDays.appendChild(button);
     }
 
-    monthYearDisplay.textContent = `${new Date(year, month).toLocaleString('default', { month: 'long' })} ${year}`;
+    const capitalizedMonth = new Date(year, month).toLocaleString('default', { month: 'long' }).charAt(0).toUpperCase() + new Date(year, month).toLocaleString('default', { month: 'long' }).slice(1);
+    monthYearDisplay.textContent = `${capitalizedMonth} ${year}`;
 }
 
 let currentDate = new Date();

@@ -86,3 +86,87 @@
         transform: rotate(0deg);
     }
 }
+
+
+
+/* Subrayado */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+  
+#cuadradoNotificaciones::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#cuadradoNotificaciones::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#cuadradoNotificaciones::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+
+@keyframes animacionCardFlecha {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(12px);
+    }
+
+    100% {
+        transform: translateX(12px);
+    }
+}
+
+@keyframes volveranimacionCardFlecha {
+    0% {
+        transform: translateX(12px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.moverFlechaMenu:hover {
+    animation: moverFlechaMenu 0.5s ease forwards;
+}
+
+.volveranimacionCardFlecha:not(:hover) {
+    animation: volveranimacionCardFlecha 0.5s ease forwards;
+}
+
+
+
+

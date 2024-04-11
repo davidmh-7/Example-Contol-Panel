@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="img/logoIrun.svg">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
     <title>Mi Carpeta Ciudadana</title>
 
@@ -27,16 +27,21 @@
             <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4 ">
         </div>
         <div class="flex justify-end absolute top-0 right-0 mr-4 text-white mt-9 xs:text-xs">
-            <div class="" id="bajarLetra">ESP</div>
+            <a href="">
+                <div class="" id="bajarLetra">ESP</div>
+            </a>
             <div class="border-l h-6 mx-4 bg-white"></div>
-            <div id="bajarLetra">EUS</div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="w-5 h-5 mr-16 ml-7" id="quitarElementos">
-                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-            </svg>
+            <a href="">
+                <div id="bajarLetra">EUS</div>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5 mr-16 ml-7" id="quitarElementos">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </a>
         </div>
     </nav>
 
@@ -233,41 +238,45 @@
             </ul>
 
             <!-- Soporte + Otros links -->
-            <div class="flex flex-col mt-64 ml-4 text-white">
-                <a href="" class="flex items-center">
-                    <div class="contactoYAyuda text-sm flex items-center">
-                        <span>Novedades</span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1">
-                            <path
-                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </a>
-                <a href="" class="flex items-center">
-                    <div class="contactoYAyuda text-sm flex items-center">
-                        <span>Contacto y Ayuda</span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1">
-                            <path
-                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </a>
-                <a href="" class="flex items-center">
-                    <div class="TerminosYServicios text-sm flex items-center">
-                        <span>Terminos y Servicios</span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1">
-                            <path
-                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </a>
+            <div class="fixed bottom-0 left-0 z-50 p-4 mb-3 ml-3">
+                <!-- Contenido de Soporte + Otros links -->
+                <div class="flex flex-col text-white">
+                    <a href="" class="hover-underline-animation flex items-center">
+                        <div class="contactoYAyuda text-sm flex items-center">
+                            <span>Novedades</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="hover-underline-animation flex items-center">
+                        <div class="contactoYAyuda text-sm flex items-center">
+                            <span>Contacto y Ayuda</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="hover-underline-animation flex items-center">
+                        <div class="TerminosYServicios text-sm flex items-center">
+                            <span>Terminos y Servicios</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
+
         </div>
 
     </aside>
@@ -376,7 +385,7 @@
 
         <!-- Boton de Abrir Chat bot -->
         <div class="flex justify-end z-54">
-            <div class="fixed bottom-4 right-16 z-50">
+            <div class="fixed bottom-4 right-16 z-50 mr-1">
                 <div id="botonQuitar" class="mb-16">
                     <div class="h-12">
                         <button onclick="ensenarChatBot()"
@@ -458,7 +467,7 @@
                                 </svg>
                             </div>
                             <div class="p-6">
-                                <div class="text-2xl font-bold">$45,231.89</div>
+                                <div class="text-2xl font-bold" id="letrasCard">$45,231.89</div>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">+20.1% from last month</p>
                             </div>
                         </div>
@@ -475,7 +484,7 @@
                                 </svg>
                             </div>
                             <div class="p-6">
-                                <div class="text-2xl font-bold">+2350</div>
+                                <div class="text-2xl font-bold" id="letrasCard">+2350</div>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">+180.1% from last month</p>
                             </div>
                         </div>
@@ -490,7 +499,7 @@
                                 </svg>
                             </div>
                             <div class="p-6">
-                                <div class="text-2xl font-bold">+12,234</div>
+                                <div class="text-2xl font-bold" id="letrasCard">+12,234</div>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">+19% from last month</p>
                             </div>
                         </div>
@@ -504,7 +513,7 @@
                                 </svg>
                             </div>
                             <div class="p-6">
-                                <div class="text-2xl font-bold">+573</div>
+                                <div class="text-2xl font-bold" id="letrasCard">+573</div>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">+201 since last hour</p>
                             </div>
                         </div>
@@ -524,13 +533,36 @@
                         <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
                             12:34 PM</time>
                     </header>
+                    <!-- hrf a evento -->
+                    <a href="">
+                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                            <div class="flex items-center gap-4">
+                                <div class="rounded-full overflow-hidden border border-gray-200"
+                                    style="width: 40px; height: 40px;">
+                                    <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                        style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                                <div class="grid gap-1.5">
+                                    <h3 class="font-medium">Messages</h3>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
 
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50"
+                                    style="width: 20px; height: 20px;">
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Añadir nuevo tramite el mismo dia -->
                     <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
                         <div class="flex items-center gap-4">
                             <div class="rounded-full overflow-hidden border border-gray-200"
                                 style="width: 40px; height: 40px;">
-                                <img src="img/ejemplo.jpg" width="40" height="40"
-                                    alt="App icon" style="width: 100%; height: 100%; object-fit: cover;" />
+                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                    style="width: 100%; height: 100%; object-fit: cover;" />
                             </div>
                             <div class="grid gap-1.5">
                                 <h3 class="font-medium">Messages</h3>
@@ -545,9 +577,59 @@
                             </svg>
                         </div>
                     </div>
-                    <!-- Añadir nuevo tramite el mismo dia -->
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                        <div class="flex items-center gap-4">
+                            <div class="rounded-full overflow-hidden border border-gray-200"
+                                style="width: 40px; height: 40px;">
+                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                    style="width: 100%; height: 100%; object-fit: cover;" />
+                            </div>
+                            <div class="grid gap-1.5">
+                                <h3 class="font-medium">Messages</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
+
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50"
+                                style="width: 20px; height: 20px;">
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
                 <!-- Añadir nuevo dia -->
+                <div class="px-4 py-6 flex flex-col gap-4 text-sm ml-16 mt-2 mr-16 xs:ml-0 xs:mr-0 xs:p-2">
+                    <header class="flex flex-col gap-1">
+                        <h1 class="text-lg font-semibold">Today</h1>
+                        <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
+                            12:34 PM</time>
+                    </header>
+
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                        <div class="flex items-center gap-4">
+                            <div class="rounded-full overflow-hidden border border-gray-200"
+                                style="width: 40px; height: 40px;">
+                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                    style="width: 100%; height: 100%; object-fit: cover;" />
+                            </div>
+                            <div class="grid gap-1.5">
+                                <h3 class="font-medium">Messages</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
+
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50"
+                                style="width: 20px; height: 20px;">
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Añadir nuevo tramite el mismo dia -->
+
+                </div>
             </div>
 
 
