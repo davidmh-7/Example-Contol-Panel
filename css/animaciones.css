@@ -133,39 +133,44 @@
 	background-color: #000000;
 	border: 2px solid #555555;
 }
-
-
-@keyframes animacionCardFlecha {
+/* Define las animaciones */
+@keyframes moverFlechaMenu {
     0% {
         transform: translateX(0);
     }
-
     50% {
-        transform: translateX(12px);
+        transform: translateX(7px);
     }
-
     100% {
-        transform: translateX(12px);
+        transform: translateX(7px);
     }
 }
 
-@keyframes volveranimacionCardFlecha {
+@keyframes volverFlechaMenu {
     0% {
-        transform: translateX(12px);
+        transform: translateX(7px);
     }
-
     100% {
         transform: translateX(0);
     }
 }
 
-.moverFlechaMenu:hover {
+/* Aplica la transición */
+.enlaceAnimado {
+    transition: transform 0.5s ease;
+}
+
+/* Aplica la animación al pasar el ratón sobre el enlace */
+.enlaceAnimado:hover .animacionCardFlecha {
     animation: moverFlechaMenu 0.5s ease forwards;
 }
 
-.volveranimacionCardFlecha:not(:hover) {
-    animation: volveranimacionCardFlecha 0.5s ease forwards;
+/* Aplica la animación cuando el ratón no está sobre el enlace */
+.enlaceAnimado:not(:hover) .animacionCardFlecha {
+    animation: volverFlechaMenu 0.5s ease forwards;
 }
+
+
 
 
 

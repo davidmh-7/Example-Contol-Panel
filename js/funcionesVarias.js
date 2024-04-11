@@ -6,6 +6,8 @@ const cuadradoNotificaciones = document.getElementById('cuadradoNotificaciones')
 const quitarElementos = document.getElementById('quitarElementos');
 const bajarLetra = document.getElementById('bajarLetra');
 const letrasCard = document.getElementById('letrasCard');
+const tamanomovil = document.getElementById('tamanomovil');
+const mostrarTamano = document.getElementById('mostrarTamano');
 
 function verificarAnchoVentana() {
     // Obtener el ancho de la ventana del navegador
@@ -21,7 +23,9 @@ function verificarAnchoVentana() {
 
         bajarLetra.style.display = 'text-xs';
         letrasCard.style.display = 'text-xs';
-
+        mostrarTamano.style.display = 'none'
+        tamanomovil.style.display = 'block';
+      
     }
 
     if (anchoVentana <= 640){
@@ -32,10 +36,15 @@ function verificarAnchoVentana() {
         left64Element.classList.remove('left-64');
         CuadradoGrande.removeAttribute('style');
 
-        CuadradoGrande.classList.add('absolute', 'top-0', 'left-0', 'right-0', 'bottom-0', 'bg-gray-50', 'overflow-hidden');
+        CuadradoGrande.classList.add('absolute', 'top-0', 'left-0', 'right-0', 'bottom-0',  'overflow-hidden');
 
         quitarElementos.style.display = 'none';
         bajarLetra.style.display = 'text-xs';
+
+        tamanomovil.style.display = 'none';
+        mostrarTamano.style.display = 'block';
+
+
     }
    
     if(anchoVentana >= 1025) {
@@ -51,7 +60,9 @@ function verificarAnchoVentana() {
 
         quitarElementos.style.display = 'block';
         bajarLetra.removeAttribute('style');
-        
+
+        mostrarTamano.style.display = 'none'
+        tamanomovil.style.display = 'block';
     }
 }
 // Llamar a la función al cargar la página y cada vez que se redimensione la ventana
