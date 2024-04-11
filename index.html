@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logoIrun.svg">
+
+    <title>Mi Carpeta Ciudadana</title>
+
+    <!-- Links Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="css/animaciones.css">
+
+    <!-- Links Iconos -->
+    <script src="https://kit.fontawesome.com/6c5280cf5b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="absolute w-full h-24 bg-red-500 z-50 shadow-lg">
+        <div class="xs:fixed flex justify-center xs: items-center">
+            <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4 ">
+        </div>
+        <div class="flex justify-end absolute top-0 right-0 mr-4 text-white mt-9 xs:text-xs">
+            <div class="" id="bajarLetra">ESP</div>
+            <div class="border-l h-6 mx-4 bg-white"></div>
+            <div id="bajarLetra">EUS</div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-5 h-5 mr-16 ml-7" id="quitarElementos">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </div>
+    </nav>
+
+
+    <!-- Nav lateral -->
+    <aside id="quitarMenuMovil"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-gray-700 shadow-inner shadow-md-right"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-700 text-white">
+            <div class="ml-4">
+                <div class="mt-36 font-semibold ">David Mangas Hernandez</div>
+
+                <div class="text-gray-200 mb-12">45164365T</div>
+            </div>
+            <ul class="space-y-3.5 font-medium ml-3">
+
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            Menu
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Tramites -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-5 w-5 mr-4">
+                                <path d="M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <path d="M10.42 12.61a2.1 2.1 0 1 1 2.97 2.97L7.95 21 4 22l.99-3.95 5.43-5.44Z"></path>
+                            </svg>
+                            Trámites
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Pagos -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                                <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                            </svg>
+                            Pagos
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Vivienda  -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                                <path d="M9 22v-4h6v4"></path>
+                                <path d="M8 6h.01"></path>
+                                <path d="M16 6h.01"></path>
+                                <path d="M12 6h.01"></path>
+                                <path d="M12 10h.01"></path>
+                                <path d="M12 14h.01"></path>
+                                <path d="M16 10h.01"></path>
+                                <path d="M16 14h.01"></path>
+                                <path d="M8 10h.01"></path>
+                                <path d="M8 14h.01"></path>
+                            </svg>
+                            Vivienda
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Vehiculos -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <path
+                                    d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2">
+                                </path>
+                                <circle cx="7" cy="17" r="2"></circle>
+                                <path d="M9 17h6"></path>
+                                <circle cx="17" cy="17" r="2"></circle>
+                            </svg>
+                            Vehiculos
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Notificaciones -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <!-- <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="w-5 h-5 mr-4"
+                          >
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                          </svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-5 w-5 mr-4">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Notificaciones
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+            </ul>
+
+            <!-- Soporte + Otros links -->
+            <div class="flex flex-col mt-64 ml-4 text-white">
+                <a href="" class="flex items-center">
+                    <div class="contactoYAyuda text-sm flex items-center">
+                        <span>Novedades</span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="ml-1">
+                            <path
+                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </a>
+                <a href="" class="flex items-center">
+                    <div class="contactoYAyuda text-sm flex items-center">
+                        <span>Contacto y Ayuda</span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="ml-1">
+                            <path
+                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </a>
+                <a href="" class="flex items-center">
+                    <div class="TerminosYServicios text-sm flex items-center">
+                        <span>Terminos y Servicios</span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="ml-1">
+                            <path
+                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- Cuadrado que esta entre el nav principal y el lateral -->
+    <div class="absolute top-0 left-64 right-0 bottom-0 bg-gray-50 overflow-hidden" id="CuadradoGrande">
+
+        <!-- El Menu Chat -->
+        <div class="fixed flex justify-end z-100 mr-0 rounded-lg lg:w-1/4 bg-white right-4 bottom-0 mb-7 xs:min-w-2/3 ml-6 mr-5"
+            id="chatBotIrun" style="display: none;">
+            <div class="w-auto rounded-lg flex justify-end">
+                <div class="flex flex-col h-96 w-full border rounded-lg overflow-hidden" id="barraLateralBot">
+                    <header
+                        class="flex items-center h-16 px-4 border-b shrink-0 md:px-6 justify-between bg-white text-gray-600 rounded-t-lg">
+                        <div class="flex items-center gap-2 text-lg font-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 41 41"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-6 h-6">
+                                <path
+                                    d="M5.5 8.5c-.7.2-1.5.5-2.2.7v-5c1.5-.5 3-.8 4.5-1.1v2.4c-.8.3-1.5.4-2.3.6v2.4zm16.8 0c.7.2 1.5.5 2.2.7v-5c-1.5-.5-3-.8-4.5-1.1v2.4c.8.1 1.5.3 2.3.5v2.5zm-6.6-.9c.8 0 1.5.1 2.2.2V.5C16.6.4 15.2.3 13.8.3c-1.3 0-2.7.1-4 .2v7.3c.7-.1 1.5-.1 2.2-.2V2.7h1.7c.6 0 1.2 0 1.8.1l.2 4.8zm7.3 5.5c-1.6 3.1-2.4 6.5-2.4 10.2 0 4.5 1.3 8.7 3.7 12.2h3.1c-2.6-3.4-4.2-7.6-4.2-12.2 0-4.3 1.3-8.3 3.7-11.6-4-1.5-8.2-2.3-12.7-2.3-4.8 0-9.3.9-13.4 2.6 2.2 3.2 3.5 7.1 3.5 11.3 0 4.6-1.6 8.9-4.2 12.2h3.1c2.3-3.5 3.7-7.7 3.7-12.2 0-3.6-.8-7-2.3-10 3.1-.9 6.3-1.4 9.7-1.4 2.8 0 6 .4 8.7 1.2z">
+                                </path>
+                                <path
+                                    d="M16.1 25.8L10.2 28l-.2 1.1c.5 0 1 .2 1.4.5.3.2.4.5.3.9l-1 7.5c-.3 2.1 1.7 2.9 3.1 2.9 1.5 0 2.8-.9 3.9-2.1l-1-1.6c-.4.3-.7.6-1.2.6s-.9-.6-.9-1.2l1.5-10.8z">
+                                </path>
+                                <path
+                                    d="M14.1 24.5v-2.3c.7-.2 1.5-.3 2.3-.5v-2.4c-1.5.3-3 .6-4.5 1.1v5c.7-.3 1.5-.7 2.2-.9z">
+                                </path>
+                            </svg>
+                            <span>Irun bot</span>
+                        </div>
+
+                        <div class="flex">
+                            <button
+                                class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-8 h-8 rounded-full"
+                                onclick="minimizarChatbot()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="transform rotate-120" id="rotarFlecha">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                                <span class="sr-only">Minimize</span>
+                            </button>
+
+                            <button
+                                class="mt-1 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground ml-2 w-8 h-8 rounded-full"
+                                onclick="borrarChatbot()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-5 h-5">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path>
+                                </svg>
+                                <span class="sr-only">Close</span>
+                            </button>
+                        </div>
+                    </header>
+
+                    <main class="flex-1 flex flex-col p-4 md:p-6 rounded-b-lg overflow-y-auto" id="barraLateralBot">
+                        <div class="grid gap-4 md:gap-6">
+                            <div class="flex flex-col items-end">
+                                <div
+                                    class="flex flex-col max-w-[75%] rounded-tl-xl rounded-bl-xl bg-gray-200 px-4 py-3 dark:bg-gray-900 rounded-tr-none rounded-br-xl mb-3">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">Hi there! How can I help you
+                                        today?</p>
+                                </div>
+                                <div
+                                    class="flex flex-col max-w-[75%] rounded-tl-xl rounded-bl-xl bg-gray-200 px-4 py-3 dark:bg-gray-900 rounded-tr-none rounded-br-xl">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">Are you looking for
+                                        information about our products or do you need assistance with an existing
+                                        order?</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start">
+                                <div
+                                    class="flex flex-col max-w-[75%] rounded-tl-tl rounded-bl-xl bg-gray-100 px-4 py-3 dark:bg-gray-900 rounded-tr-xl rounded-br-xl">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">I'm having trouble tracking
+                                        my order. Can you help me?</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-start">
+                                <div
+                                    class="flex flex-col max-w-[75%] rounded-tl-tl rounded-bl-xl bg-gray-100 px-4 py-3 dark:bg-gray-900 rounded-tr-xl rounded-br-xl">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">I'm having trouble tracking
+                                        my order. Can you help me?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer class="h-16 px-4 md:px-6 justify-center bg-gray-100 border-t rounded-b-lg">
+                        <div class="mt-3">
+                            <form class="flex gap-2">
+                                <input
+                                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1 min-h-[40px]"
+                                    placeholder="Type a message..." type="text">
+                                <button
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white hover:bg-gray-800 h-10 px-4 py-2"
+                                    type="submit">Send <i class="fa-regular fa-paper-plane ml-2"></i></button>
+                            </form>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Boton de Abrir Chat bot -->
+        <div class="flex justify-end z-54">
+            <div class="fixed bottom-4 right-16 z-50">
+                <div id="botonQuitar" class="mb-16">
+                    <div class="h-12">
+                        <button onclick="ensenarChatBot()"
+                            class="bg-gray-100  inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:opacity-70 hover:bg-gray-200 hover:text-accent-foreground h-12 px-4 py-2 rounded-l-full rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-11 w-11">
+                                <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path>
+                            </svg>
+
+                            <span class="sr-only">Open chat</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Cuadrado Blacno principal -->
+        <div class="w-auto h-[85vh] mt-32 ml-9 rounded-lg mr-9 z-12 xs-w-auto xs-h-[95vh] ml-2 mr-2 "
+            style="overflow-y: auto;">
+            <div class="grid grid-cols-2 " id="quitarParaMovil">
+
+                <!-- Cuadrado de Calendario + cards -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-3xl mx-auto mt-2"
+                    data-v0-t="card">
+                    <div class="space-y-1.5 flex flex-col gap-2 p-6">
+                        <div class="flex items-center gap-2">
+                            <button
+                                class="prev-month-btn inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-4 w-4">
+                                    <path d="m15 18-6-6 6-6"></path>
+                                </svg>
+                                <span class="sr-only">Mes Anterior</span>
+                            </button>
+                            <h2 class="text-lg font-medium"></h2>
+                            <button
+                                class="next-month-btn inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-4 w-4">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                                <span class="sr-only">Siguiente mes</span>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-7 items-center text-center text-xs font-medium">
+                            <span>Lun</span>
+                            <span>Mar</span>
+                            <span>Mie</span>
+                            <span>Jue</span>
+                            <span>Vie</span>
+                            <span>Sab</span>
+                            <span class="text-gray-500 dark:text-gray-400">Dom</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-7 grid-rows-6 items-start text-sm gap-1" id="calendar-days">
+                            <!-- Se añaden automaticamnete los dias aqui -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Cards Derecha -->
+                <main class="flex-1 p-4 md:p-6 ml-3">
+                    <div class="grid gap-8 md:grid-cols-2 mt-5">
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
+                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Total Revenue</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
+                                    <line x1="12" x2="12" y1="2" y2="22"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <div class="p-6">
+                                <div class="text-2xl font-bold">$45,231.89</div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">+20.1% from last month</p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
+                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Subscriptions</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="p-6">
+                                <div class="text-2xl font-bold">+2350</div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">+180.1% from last month</p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
+                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Sales</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
+                                    <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                    <line x1="2" x2="22" y1="10" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="p-6">
+                                <div class="text-2xl font-bold">+12,234</div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">+19% from last month</p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
+                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Active Now</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+                            <div class="p-6">
+                                <div class="text-2xl font-bold">+573</div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">+201 since last hour</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+
+
+            <!-- Recuadro de abajo -->
+            <div class="h-96 ml-3 mt-5 rounded-lg border bg-card text-card-foreground shadow-sm w-auto max-w-8xl mx-auto mr-5 xs"
+                style="overflow-y: auto;" id="cuadradoNotificaciones">
+
+                <div class="px-4 py-6 flex flex-col gap-4 text-sm ml-16 mt-2 mr-16 xs:ml-0 xs:mr-0 xs:p-2">
+                    <header class="flex flex-col gap-1">
+                        <h1 class="text-lg font-semibold">Today</h1>
+                        <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
+                            12:34 PM</time>
+                    </header>
+
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                        <div class="flex items-center gap-4">
+                            <div class="rounded-full overflow-hidden border border-gray-200"
+                                style="width: 40px; height: 40px;">
+                                <img src="img/ejemplo.jpg" width="40" height="40"
+                                    alt="App icon" style="width: 100%; height: 100%; object-fit: cover;" />
+                            </div>
+                            <div class="grid gap-1.5">
+                                <h3 class="font-medium">Messages</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
+
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50"
+                                style="width: 20px; height: 20px;">
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Añadir nuevo tramite el mismo dia -->
+                </div>
+                <!-- Añadir nuevo dia -->
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!-- Scripts JS -->
+    <script src="js/calendario.js"></script>
+    <script src="js/chatBot.js"></script>
+    <script src="js/funcionesVarias.js"></script>
+</body>
+
+</html>
