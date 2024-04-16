@@ -23,9 +23,19 @@
 <body>
     <!-- Nav bar -->
     <nav class="absolute w-full h-24 bg-red-500 z-50 shadow-lg">
+       
         <div class="xs:fixed flex justify-center xs: items-center">
-            <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4 ">
+            <div class="background left-0 fixed mt-32 ml-5" id="menuDesplegable" style="display: none;" onclick="menuDesplegablee()">
+                <button class="menu__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4" id="logoIrun">
+            
         </div>
+       
         <div class="flex justify-end absolute top-0 right-0 mr-4 text-white mt-9 xs:text-xs">
             <a href="">
                 <div class="" id="bajarLetra">ESP</div>
@@ -44,6 +54,7 @@
             </a>
         </div>
     </nav>
+
 
     <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 

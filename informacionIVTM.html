@@ -23,9 +23,19 @@
 <body>
     <!-- Nav bar -->
     <nav class="absolute w-full h-24 bg-red-500 z-50 shadow-lg">
+       
         <div class="xs:fixed flex justify-center xs: items-center">
-            <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4 ">
+            <div class="background left-0 fixed mt-32 ml-5" id="menuDesplegable" style="display: none;" onclick="menuDesplegablee()">
+                <button class="menu__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4" id="logoIrun">
+            
         </div>
+       
         <div class="flex justify-end absolute top-0 right-0 mr-4 text-white mt-9 xs:text-xs">
             <a href="">
                 <div class="" id="bajarLetra">ESP</div>
@@ -44,6 +54,7 @@
             </a>
         </div>
     </nav>
+
 
     <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -97,7 +108,7 @@
                             Trámites
                         </div>
                     </a>
-                    <button onclick="window.location.href = 'VehiculosTramite.html'"
+                    <button onclick="window.location.href = ''"
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -137,7 +148,7 @@
 
                 <!-- Vivienda  -->
                 <li class="flex w-auto justify-between">
-                    <a href="">
+                    <a href="viviendaMenu.html">
                         <div class="font-normal text-xl flex items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -157,7 +168,7 @@
                             Vivienda
                         </div>
                     </a>
-                    <button
+                    <button onclick="window.location.href = 'viviendaMenu.html'"
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -171,7 +182,7 @@
 
                 <!-- Vehiculos -->
                 <li class="flex w-auto justify-between">
-                    <a href="">
+                    <a href="vehiculosTramite.html">
                         <div class="font-normal text-xl flex items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -186,7 +197,7 @@
                             Vehiculos
                         </div>
                     </a>
-                    <button
+                    <button onclick="window.location.href = 'vehiculosTramite.html'"
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -299,20 +310,11 @@
                                 <a href="index.html" class="block transition hover:text-gray-700">
                                     <span class="sr-only"> Home </span>
 
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-4 w-4"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                  >
-                                    <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                                    />
-                                  </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                    </svg>
                                 </a>
                             </li>
 
@@ -325,10 +327,11 @@
                                 </svg>
                             </li>
 
-                           
+
 
                             <li>
-                                <a href="vehiculosTramite.html" class="block transition hover:text-gray-700"> Tramites Vehiculo </a>
+                                <a href="vehiculosTramite.html" class="block transition hover:text-gray-700"> Tramites
+                                    Vehiculo </a>
                             </li>
                             <li class="rtl:rotate-180">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
@@ -340,7 +343,8 @@
                             </li>
 
                             <li>
-                                <a href="vehiculosMatricula.html" class="block transition hover:text-gray-700"> IVTM </a>
+                                <a href="vehiculosMatricula.html" class="block transition hover:text-gray-700"> IVTM
+                                </a>
                             </li>
                             <li class="rtl:rotate-180">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
@@ -354,13 +358,15 @@
                             <li>
                                 <a href="#" class="block transition hover:text-gray-700"> 1234-ABC </a>
                             </li>
-                            
+
 
 
                         </ol>
                     </nav>
-                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Ultimo Tramite IVTM</div>
-                    <div class="mt-3 text-gray-500 text-sm">En este apartado te mostrar el ultimo recivo IVTM del vehiculo para consultar mas dale al link que pone: "Ver todos los recibos IVTM"</div>
+                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Ultimo
+                        Tramite IVTM</div>
+                    <div class="mt-3 text-gray-500 text-sm">En este apartado te mostrar el ultimo recivo IVTM del
+                        vehiculo para consultar mas dale al link que pone: "Ver todos los recibos IVTM"</div>
                 </div>
             </div>
 
@@ -375,24 +381,26 @@
                     h6 {
                         font-family: 'Inter', sans-serif;
                         --font-sans: 'Inter';
-                        font-size: 1.5rem; 
+                        font-size: 1.5rem;
                     }
+
                     #interStyle {
                         font-family: 'Inter', sans-serif;
                         --font-sans: 'Inter';
                     }
                 </style>
-                <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col p-6 w-full overflow-y-auto gap-4" data-v0-t="card" style="max-height: 520px;">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col p-6 w-full overflow-y-auto gap-4"
+                    data-v0-t="card" style="max-height: 520px;">
                     <div class="space-y-1.5 p-6 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
                         <div class="flex flex-col items-start gap-1">
                             <p class="text-sm text-muted-foreground">Coche</p>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight"> 
+                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
                                 Mercedes A 45S
                             </h3>
                         </div>
                         <div class="flex flex-col items-start gap-1">
                             <p class="text-sm text-muted-foreground">Matricula</p>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight"> 
+                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
                                 1234-ABC
                             </h3>
                         </div>
@@ -402,7 +410,7 @@
                                 David Mangas
 
                             </h3>
-                            
+
                         </div>
                     </div>
                     <div class="p-6 flex flex-col gap-4 ">
@@ -410,7 +418,9 @@
                             <div class="flex flex-col gap-1">
                                 <div class="flex flex-col gap-1">
                                     <p class="text-sm text-muted-foreground flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2">
                                             <rect width="16" height="12" x="2" y="5" rx="2"></rect>
                                             <line x1="2" x2="18" y1="10" y2="10"></line>
                                         </svg>
@@ -418,35 +428,42 @@
                                     </p>
                                 </div>
                             </div>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight"> <!-- Cambiado a text-lg -->
+                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
+                                <!-- Cambiado a text-lg -->
                                 00490909468432828470
                             </h3>
                             <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
                         </div>
                         <div class="flex flex-col gap-1">
                             <p class="text-sm text-muted-foreground">Valor</p>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight"> <!-- Cambiado a text-lg -->
+                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
+                                <!-- Cambiado a text-lg -->
                                 300€
                             </h3>
                             <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
                         </div>
                         <div class="flex flex-col gap-1">
                             <p class="text-sm text-muted-foreground">Descripción</p>
-                            <h3 class="whitespace-normal text-base font-semibold leading-tight tracking-tight max-w-full overflow-hidden" style="line-height: 1.5;"> <!-- Cambiado a text-base -->
-                                dauwdhwahdihwa idhwai hdiwah dihwa iodhawioh diwoah didhwa iohsdiowahsd woipah dsihwioah sidhiwa hio hdis fugASUG DCWIA HRDWIAHDCIWHA DIHWAIUHDWA
+                            <h3 class="whitespace-normal text-base font-semibold leading-tight tracking-tight max-w-full overflow-hidden"
+                                style="line-height: 1.5;"> <!-- Cambiado a text-base -->
+                                dauwdhwahdihwa idhwai hdiwah dihwa iodhawioh diwoah didhwa iohsdiowahsd woipah dsihwioah
+                                sidhiwa hio hdis fugASUG DCWIA HRDWIAHDCIWHA DIHWAIUHDWA
                             </h3>
                             <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
                         </div>
                         <a href="" class="hover-underline-animationBlack mt-3 w-48 flex items-center">
                             <div class="text-sm text-gray-700 hover:text-gray-500">Ver todos los recibos IVTM</div>
-                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1">
-                                <path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="black" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fill="black" fill-rule="evenodd" clip-rule="evenodd"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
-            
+
 
             <div class="mb-64 w-1 h1"></div>
 
@@ -598,20 +615,11 @@
                                     <a href="index.html" class="block transition hover:text-gray-700">
                                         <span class="sr-only"> Home </span>
 
-                                        <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-4 w-4"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                      >
-                                        <path
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          stroke-width="2"
-                                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                                        />
-                                      </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                        </svg>
                                     </a>
                                 </li>
 
@@ -624,10 +632,11 @@
                                     </svg>
                                 </li>
 
-                               
+
 
                                 <li>
-                                    <a href="vehiculosTramite.html" class="block transition hover:text-gray-700"> Tramites Vehiculo </a>
+                                    <a href="vehiculosTramite.html" class="block transition hover:text-gray-700">
+                                        Tramites Vehiculo </a>
                                 </li>
                                 <li class="rtl:rotate-180">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
@@ -639,7 +648,8 @@
                                 </li>
 
                                 <li>
-                                    <a href="vehiculosMatricula.html" class="block transition hover:text-gray-700"> IVTM </a>
+                                    <a href="vehiculosMatricula.html" class="block transition hover:text-gray-700"> IVTM
+                                    </a>
                                 </li>
                                 <li class="rtl:rotate-180">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
@@ -653,12 +663,13 @@
                                 <li>
                                     <a href="#" class="block transition hover:text-gray-700"> 1234-ABC </a>
                                 </li>
-                                
+
 
 
                             </ol>
                         </nav>
-                        <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Ultimo Tramite IVTM
+                        <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Ultimo
+                            Tramite IVTM
                         </div>
                     </div>
                 </div>
@@ -700,25 +711,28 @@
                                 <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">David
                                     Mangas</h3>
                             </div>
-                          
+
                         </div>
                         <div class="p-6 flex flex-col gap-4 ">
                             <div class="flex flex-col gap-1">
                                 <div class="flex flex-col gap-1">
                                     <div class="flex flex-col gap-1">
                                         <p class="text-sm text-muted-foreground flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" class="w-5 h-5 mr-2">
-                                                <rect width="16" height="12" x="2" y="5" rx="2"></rect>
-                                                <line x1="2" x2="18" y1="10" y2="10"></line>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="w-4 h-4 inline-block mr-1">
+                                                <path
+                                                    d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z">
+                                                </path>
+                                                <path d="M7 7h.01"></path>
                                             </svg>
                                             Referencia
                                         </p>
                                     </div>
-                                    
+
                                 </div>
-                                
+
 
                                 <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
                                     00490909468432828470
@@ -726,30 +740,39 @@
                                 <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
                             </div>
                             <div class="flex flex-col gap-1">
-                                <p class="text-sm text-muted-foreground">Valor</p>
+                                <p class="text-sm text-muted-foreground flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-5 h-5 mr-2">
+                                        <rect width="16" height="12" x="2" y="5" rx="2"></rect>
+                                        <line x1="2" x2="18" y1="10" y2="10"></line>
+                                    </svg> Importe
+                                </p>
                                 <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">300€
                                 </h3>
                                 <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <p class="text-sm text-muted-foreground">Descripción</p>
-                                <h3 class="whitespace-normal text-lg font-semibold leading-tight tracking-tight max-w-full overflow-hidden" style="line-height: 1.5;">
-                                    dauwdhwahdihwa idhwai hdiwah dihwa iodhawioh diwoah didhwa iohsdiowahsd woipah dsihwioah sidhiwa hio hdis fugASUG DCWIA HRDWIAHDCIWHA DIHWAIUHDWA
+                                <h3 class="whitespace-normal text-lg font-semibold leading-tight tracking-tight max-w-full overflow-hidden"
+                                    style="line-height: 1.5;">
+                                    dauwdhwahdihwa idhwai hdiwah dihwa iodhawioh diwoah didhwa iohsdiowahsd woipah
+                                    dsihwioah sidhiwa hio hdis fugASUG DCWIA HRDWIAHDCIWHA DIHWAIUHDWA
                                 </h3>
                                 <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
                             </div>
-                            
+
                             <a href="" class="hover-underline-animationBlack mt-3 w-48 flex items-center">
                                 <div class="text-sm text-gray-700 hover:text-gray-500">Ver todos los recibos IVTM</div>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    class="ml-1">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="ml-1">
                                     <path
                                         d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                                         fill="black" fill-rule="evenodd" clip-rule="evenodd"></path>
                                 </svg>
                             </a>
-                            
-                           
+
+
                         </div>
                     </div>
 

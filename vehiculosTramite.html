@@ -23,9 +23,19 @@
 <body>
     <!-- Nav bar -->
     <nav class="absolute w-full h-24 bg-red-500 z-50 shadow-lg">
+       
         <div class="xs:fixed flex justify-center xs: items-center">
-            <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4 ">
+            <div class="background left-0 fixed mt-32 ml-5" id="menuDesplegable" style="display: none;" onclick="menuDesplegablee()">
+                <button class="menu__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4" id="logoIrun">
+            
         </div>
+       
         <div class="flex justify-end absolute top-0 right-0 mr-4 text-white mt-9 xs:text-xs">
             <a href="">
                 <div class="" id="bajarLetra">ESP</div>
@@ -44,6 +54,7 @@
             </a>
         </div>
     </nav>
+
 
     <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -137,7 +148,7 @@
 
                 <!-- Vivienda  -->
                 <li class="flex w-auto justify-between">
-                    <a href="">
+                    <a href="viviendaMenu.html">
                         <div class="font-normal text-xl flex items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -157,7 +168,7 @@
                             Vivienda
                         </div>
                     </a>
-                    <button
+                    <button onclick="window.location.href = 'viviendaMenu.html'"
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

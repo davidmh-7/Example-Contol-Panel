@@ -19,6 +19,7 @@
     <script src="https://kit.fontawesome.com/6c5280cf5b.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <!-- Nav bar -->
     <nav class="absolute w-full h-24 bg-red-500 z-50 shadow-lg">
@@ -54,6 +55,7 @@
         </div>
     </nav>
 
+
     <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <!-- Nav lateral -->
@@ -69,7 +71,7 @@
             <ul class="space-y-3.5 font-medium ml-3">
 
                 <li class="flex w-auto justify-between">
-                    <a href="">
+                    <a href="index.html">
                         <div class="font-normal text-xl flex items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -80,7 +82,7 @@
                             Menu
                         </div>
                     </a>
-                    <button
+                    <button onclick="window.location.href = 'index.html'"
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -106,7 +108,7 @@
                             Trámites
                         </div>
                     </a>
-                    <button
+                    <button onclick="window.location.href = ''"
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -195,8 +197,8 @@
                             Vehiculos
                         </div>
                     </a>
-                    <button
-                    onclick="window.location.href = 'vehiculosTramite.html'" class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                    <button onclick="window.location.href = 'VehiculosTramite.html'"
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="transform -rotate-90">
@@ -300,82 +302,60 @@
         <!-- Notificaciones en pequeño -->
         <div class="h-full mt-32  bg-card text-card-foreground shadow-sm w-auto mx-auto"
             style="display: none; overflow-y: auto;" id="mostrarTamano">
+            <div class="flex ml-7 mt-5">
+                <div class="max-w-xs">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="flex items-center gap-1 text-sm text-gray-600">
+                            <li>
+                                <a href="index.html" class="block transition hover:text-gray-700">
+                                    <span class="sr-only"> Home </span>
 
-            <div class="px-4 py-6 flex flex-col gap-4 text-sm ml-16 mt-2 mr-16 xs:ml-0 xs:mr-0 xs:p-2">
-                <header class="flex flex-col gap-1">
-                    <h1 class="text-lg font-semibold">Today</h1>
-                    <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
-                        12:34 PM</time>
-                </header>
-                <!-- hrf a evento -->
-                <a href="" class="enlaceAnimado">
-                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
-                        <div class="flex items-center gap-4">
-                            <div class="rounded-full overflow-hidden border border-gray-200"
-                                style="width: 40px; height: 40px;">
-                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
-                                    style="width: 100%; height: 100%; object-fit: cover;" />
-                            </div>
-                            <div class="grid gap-1.5">
-                                <h3 class="font-medium">Messages</h3>
-                                <p class="text-sm text-gray-500 dark:text-gray-400 h-auto">New message from Kate.</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                    </svg>
+                                </a>
+                            </li>
 
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
-                                style="width: 20px; height: 20px;">
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </div>
+                            <li class="rtl:rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </li>
+
+                            <li>
+                                <a href="vehiculosTramite.html" class="block transition hover:text-gray-700"> Tramites
+                                    Vehiculo </a>
+                            </li>
+
+
+
+                        </ol>
+                    </nav>
+                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Tramites
+                        Vehiculos
                     </div>
-                </a>
-
-                <a href="" class="enlaceAnimado">
-                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
-                        <div class="flex items-center gap-4">
-                            <div class="rounded-full overflow-hidden border border-gray-200"
-                                style="width: 40px; height: 40px;">
-                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
-                                    style="width: 100%; height: 100%; object-fit: cover;" />
-                            </div>
-                            <div class="grid gap-1.5">
-                                <h3 class="font-medium">Messages</h3>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
-
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
-                                style="width: 20px; height: 20px;">
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Añadir nuevo tramite el mismo dia -->
-
+                    <div class="mt-4 text-gray-500 text-base">En este apartado encontrarás tus vehículos que tienes en
+                        disposición y sus datos respectivos con IVTM, OTA y las Pilonas. </div>
+                </div>
             </div>
-            <div class="px-4 py-6 flex flex-col gap-4 text-sm ml-16 mt-2 mr-16 xs:ml-0 xs:mr-0 xs:p-2">
-                <header class="flex flex-col gap-1">
-                    <h1 class="text-lg font-semibold">Today</h1>
-                    <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
-                        12:34 PM</time>
-                </header>
-                <!-- hrf a evento -->
-                <a href="" class="enlaceAnimado">
-                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+
+
+            <div class="justify-center w-auto mx-auto mt-10 ml-3 mr-3">
+                <a href="vehiculosMatricula.html" class="enlaceAnimado">
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
                         <div class="flex items-center gap-4">
                             <div class="rounded-full overflow-hidden border border-gray-200"
-                                style="width: 40px; height: 40px;">
-                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
                                     style="width: 100%; height: 100%; object-fit: cover;" />
                             </div>
                             <div class="grid gap-1.5">
-                                <h3 class="font-medium">Messages</h3>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
-
+                                <h3 class="font-medium text-lg">IVTM</h3>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -386,19 +366,16 @@
                         </div>
                     </div>
                 </a>
-
                 <a href="" class="enlaceAnimado">
-                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
                         <div class="flex items-center gap-4">
                             <div class="rounded-full overflow-hidden border border-gray-200"
-                                style="width: 40px; height: 40px;">
-                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
                                     style="width: 100%; height: 100%; object-fit: cover;" />
                             </div>
                             <div class="grid gap-1.5">
-                                <h3 class="font-medium">Messages</h3>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
-
+                                <h3 class="font-medium text-lg">OTA</h3>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -409,30 +386,16 @@
                         </div>
                     </div>
                 </a>
-
-                <!-- Añadir nuevo tramite el mismo dia -->
-
-            </div>
-            <!-- Añadir nuevo dia -->
-            <div class="px-4 py-6 flex flex-col gap-4 text-sm ml-16 mt-2 mr-16 xs:ml-0 xs:mr-0 xs:p-2">
-                <header class="flex flex-col gap-1">
-                    <h1 class="text-lg font-semibold">Today</h1>
-                    <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
-                        12:34 PM</time>
-                </header>
-                <!-- hrf a evento -->
                 <a href="" class="enlaceAnimado">
-                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
                         <div class="flex items-center gap-4">
                             <div class="rounded-full overflow-hidden border border-gray-200"
-                                style="width: 40px; height: 40px;">
-                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
                                     style="width: 100%; height: 100%; object-fit: cover;" />
                             </div>
                             <div class="grid gap-1.5">
-                                <h3 class="font-medium">Messages</h3>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
-
+                                <h3 class="font-medium text-lg">Pilonas</h3>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -443,31 +406,6 @@
                         </div>
                     </div>
                 </a>
-
-                <a href="" class="enlaceAnimado">
-                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
-                        <div class="flex items-center gap-4">
-                            <div class="rounded-full overflow-hidden border border-gray-200"
-                                style="width: 40px; height: 40px;">
-                                <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
-                                    style="width: 100%; height: 100%; object-fit: cover;" />
-                            </div>
-                            <div class="grid gap-1.5">
-                                <h3 class="font-medium">Messages</h3>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
-
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
-                                style="width: 20px; height: 20px;">
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Añadir nuevo tramite el mismo dia -->
 
             </div>
 
@@ -580,8 +518,8 @@
 
         <!-- Boton de Abrir Chat bot -->
         <div class="flex justify-end z-54">
-            <div class="fixed bottom-4 right-16 z-50 mr-1">
-                <div id="botonQuitar" class="mb-16">
+            <div class="fixed bottom-4 right-16 z-50 mr-1 xs:right-10 xs:mr-0 xs:bottom-4">
+                <div id="botonQuitar" class="mb-16 xs:mb-10">
                     <div class="h-12">
                         <button onclick="ensenarChatBot()"
                             class="bg-gray-100  inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:opacity-70 hover:bg-gray-200 hover:text-accent-foreground h-12 px-4 py-2 rounded-l-full rounded-r-full">
@@ -603,154 +541,66 @@
         <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
         <!-- Cuadrado Blacno principal -->
-        <div class="w-auto h-[85vh] mt-32 ml-9 rounded-lg mr-9 z-12 xs-w-auto xs-h-[95vh] ml-2 mr-2"
-            style="overflow-y: auto;" id="tamanomovil">
-
-           <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-            <!--Menu vehiculos en Grande-->
-
-
-            
-
-
-            <div class="grid grid-cols-2 " id="quitarParaMovil"> 
-
-                <!-- Cuadrado de Calendario + cards -->
-                <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-3xl mx-auto mt-2"
-                    data-v0-t="card">
-                    <div class="space-y-1.5 flex flex-col gap-2 p-6">
-                        <div class="flex items-center gap-2">
-                            <button
-                                class="prev-month-btn inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="h-4 w-4">
-                                    <path d="m15 18-6-6 6-6"></path>
-                                </svg>
-                                <span class="sr-only">Mes Anterior</span>
-                            </button>
-                            <h2 class="text-lg font-medium"></h2>
-                            <button
-                                class="next-month-btn inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="h-4 w-4">
-                                    <path d="m9 18 6-6-6-6"></path>
-                                </svg>
-                                <span class="sr-only">Siguiente mes</span>
-                            </button>
-                        </div>
-                        <div class="grid grid-cols-7 items-center text-center text-xs font-medium">
-                            <span>Lun</span>
-                            <span>Mar</span>
-                            <span>Mie</span>
-                            <span>Jue</span>
-                            <span>Vie</span>
-                            <span>Sab</span>
-                            <span class="text-gray-500 dark:text-gray-400">Dom</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="grid grid-cols-7 grid-rows-6 items-start text-sm gap-1" id="calendar-days">
-                            <!-- Se añaden automaticamnete los dias aqui -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4 Cards Derecha -->
-                <main class="flex-1 p-4 md:p-6 ml-3">
-                    <div class="grid gap-8 md:grid-cols-2 mt-5">
-                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
-                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Total Revenue</h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
-                                    <line x1="12" x2="12" y1="2" y2="22"></line>
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                </svg>
-                            </div>
-                            <div class="p-6">
-                                <div class="text-2xl font-bold" id="letrasCard">$45,231.89</div>
-                                <p class="text-xs text-gray-500 dark:text-gray-400">+20.1% from last month</p>
-                            </div>
-                        </div>
-                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
-                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Subscriptions</h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <div class="p-6">
-                                <div class="text-2xl font-bold" id="letrasCard">+2350</div>
-                                <p class="text-xs text-gray-500 dark:text-gray-400">+180.1% from last month</p>
-                            </div>
-                        </div>
-                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
-                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Sales</h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
-                                    <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                                    <line x1="2" x2="22" y1="10" y2="10"></line>
-                                </svg>
-                            </div>
-                            <div class="p-6">
-                                <div class="text-2xl font-bold" id="letrasCard">+12,234</div>
-                                <p class="text-xs text-gray-500 dark:text-gray-400">+19% from last month</p>
-                            </div>
-                        </div>
-                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                            <div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0">
-                                <h3 class="whitespace-nowrap tracking-tight text-sm font-medium">Active Now</h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="w-4 h-4 text-gray-500 dark:text-gray-400">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
-                            </div>
-                            <div class="p-6">
-                                <div class="text-2xl font-bold" id="letrasCard">+573</div>
-                                <p class="text-xs text-gray-500 dark:text-gray-400">+201 since last hour</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </main>
-            </div>
+        <div class="w-auto h-[85vh] mt-32 ml-9 rounded-lg mr-9 z-12 xs-w-auto xs-h-[95vh] ml-2 mr-2" id="tamanomovil">
+            <!--No quitar-->
+            <div class="grid grid-cols-2" id="quitarParaMovil"></div>
 
 
             <!-- Recuadro de abajo -->
-            <div class="h-96 ml-3 mt-5 rounded-lg border bg-card text-card-foreground shadow-sm w-auto max-w-8xl mx-auto mr-5 xs"
-                style="overflow-y: auto;" id="cuadradoNotificaciones">
+            <div class="h-[80vh] ml-3 mt-5 rounded-lg border bg-gray-50 text-card-foreground shadow-sm w-auto max-w-8xl mx-auto mr-5 mb-10"
+                id="cuadradoNotificaciones">
+                <div class="mt-16"></div>
+                <div class="flex ml-16 mt-5">
 
-                <div class="px-4 py-6 flex flex-col gap-4 text-sm ml-16 mt-2 mr-16 xs:ml-0 xs:mr-0 xs:p-2">
-                    <header class="flex flex-col gap-1">
-                        <h1 class="text-lg font-semibold">Today</h1>
-                        <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
-                            12:34 PM</time>
-                    </header>
-                    <!-- hrf a evento -->
-                    <a href="" class="enlaceAnimado">
-                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                    <div class="max-w-lg">
+                        <nav aria-label="Breadcrumb">
+                            <ol class="flex items-center gap-1 text-sm text-gray-600">
+                                <li>
+                                    <a href="index.html" class="block transition hover:text-gray-700">
+                                        <span class="sr-only"> Home </span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="rtl:rotate-180">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </li>
+
+                                <li>
+                                    <a href="vehiculosTramite.html" class="block transition hover:text-gray-700">
+                                        Tramites Vivienda </a>
+                                </li>
+
+
+
+                            </ol>
+                        </nav>
+                        <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Tramites Vivienda
+                        </div>
+                        <div class="mt-4 text-gray-500 text-base">En este apartado encontrarás las accione disponibles con vivienda.</div>
+                    </div>
+                </div>
+                <div class="justify-center w-auto mx-auto mt-10 ml-16 mr-16">
+                    <a href="vehiculosMatricula.html" class="enlaceAnimado">
+                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
                             <div class="flex items-center gap-4">
                                 <div class="rounded-full overflow-hidden border border-gray-200"
-                                    style="width: 40px; height: 40px;">
-                                    <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                    style="width: 60px; height: 60px;">
+                                    <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
                                         style="width: 100%; height: 100%; object-fit: cover;" />
                                 </div>
                                 <div class="grid gap-1.5">
-                                    <h3 class="font-medium">Messages</h3>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
-
+                                    <h3 class="font-medium text-lg">Cementerio</h3>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -761,19 +611,16 @@
                             </div>
                         </div>
                     </a>
-
-                    <a href="" class="enlaceAnimado">
-                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
+                    <a href="vehiculosMatricula.html" class="enlaceAnimado">
+                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
                             <div class="flex items-center gap-4">
                                 <div class="rounded-full overflow-hidden border border-gray-200"
-                                    style="width: 40px; height: 40px;">
-                                    <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
+                                    style="width: 60px; height: 60px;">
+                                    <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
                                         style="width: 100%; height: 100%; object-fit: cover;" />
                                 </div>
                                 <div class="grid gap-1.5">
-                                    <h3 class="font-medium">Messages</h3>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
-
+                                    <h3 class="font-medium text-lg">Casa</h3>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -784,85 +631,45 @@
                             </div>
                         </div>
                     </a>
-
-                    <!-- Añadir nuevo tramite el mismo dia -->
-
-
-
-
+                    <a href="" class="enlaceAnimado">
+                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
+                            <div class="flex items-center gap-4">
+                                <div class="rounded-full overflow-hidden border border-gray-200"
+                                    style="width: 60px; height: 60px;">
+                                    <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
+                                        style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                                <div class="grid gap-1.5">
+                                    <h3 class="font-medium text-lg">Otro</h3>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                    style="width: 20px; height: 20px;">
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
 
                 </div>
-                <div class="px-4 py-6 flex flex-col gap-4 text-sm ml-16 mt-2 mr-16 xs:ml-0 xs:mr-0 xs:p-2">
-                    <header class="flex flex-col gap-1">
-                        <h1 class="text-lg font-semibold">Today</h1>
-                        <time class="text-sm not-italic font-normal text-gray-500 dark:text-gray-400">Tue, Jan 10, 2023,
-                            12:34 PM</time>
-                    </header>
-                    <!-- hrf a evento -->
-                    <a href="" class="enlaceAnimado">
-                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
-                            <div class="flex items-center gap-4">
-                                <div class="rounded-full overflow-hidden border border-gray-200"
-                                    style="width: 40px; height: 40px;">
-                                    <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
-                                        style="width: 100%; height: 100%; object-fit: cover;" />
-                                </div>
-                                <div class="grid gap-1.5">
-                                    <h3 class="font-medium">Messages</h3>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
 
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
-                                    style="width: 20px; height: 20px;">
-                                    <path d="m12 5 7 7-7 7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
 
-                    <a href="" class="enlaceAnimado">
-                        <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto">
-                            <div class="flex items-center gap-4">
-                                <div class="rounded-full overflow-hidden border border-gray-200"
-                                    style="width: 40px; height: 40px;">
-                                    <img src="img/ejemplo.jpg" width="40" height="40" alt="App icon"
-                                        style="width: 100%; height: 100%; object-fit: cover;" />
-                                </div>
-                                <div class="grid gap-1.5">
-                                    <h3 class="font-medium">Messages</h3>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">New message from Kate.</p>
 
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
-                                    style="width: 20px; height: 20px;">
-                                    <path d="m12 5 7 7-7 7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
 
-                    <!-- Añadir nuevo tramite el mismo dia -->
 
-                </div>
-                <!-- Añadir nuevo dia -->
+
 
             </div>
 
-
         </div>
-    </div>
 
 
 
-    <!-- Scripts JS -->
+        <!-- Scripts JS -->
 
-    <script src="js/calendario.js"></script>
-    <script src="js/chatBot.js"></script>
-    <script src="js/funcionesVarias.js"></script>
+        <script src="js/chatBot.js"></script>
+        <script src="js/funcionesVarias.js"></script>
 </body>
 
 </html>
