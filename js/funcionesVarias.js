@@ -10,16 +10,13 @@ const tamanomovil = document.getElementById('tamanomovil');
 const mostrarTamano = document.getElementById('mostrarTamano');
 const logoIrun = document.getElementById('logoIrun');
 const menuDesplegable = document.getElementById('menuDesplegable');
-const quitarMenuMovil2 = document.getElementById('quitarMenuMovil2');
-
-
+const aaaaa = document.getElementById('aaaaa');
 
 
 function verificarAnchoVentana() {
     // Obtener el ancho de la ventana del navegador
     var anchoVentana = window.innerWidth;
     if (anchoVentana <= 1024 && anchoVentana >= 641) {
-        quitarMenuMovil.style.display = 'none';
         quitarMenuMovil.style.display = 'none';
 
         left64Element.classList.remove('left-64');
@@ -35,35 +32,37 @@ function verificarAnchoVentana() {
         // menu Desplegable
         menuDesplegable.style.display = 'block';
         logoIrun.classList.remove('mt-4');
-        logoIrun.classList.add('mt-24','absolute');
-      
+        logoIrun.classList.add('mt-24', 'absolute');
+
+
     }
 
-    if (anchoVentana <= 640){
+    if (anchoVentana <= 640) {
         console.log("La ventana es igual o menor a 640px");
-        
 
+        quitarMenuMovil.style.display = 'none';
         left64Element.classList.remove('left-64');
         CuadradoGrande.removeAttribute('style');
 
-        CuadradoGrande.classList.add('absolute', 'top-0', 'left-0', 'right-0', 'bottom-0',  'overflow-hidden');
+        CuadradoGrande.classList.add('absolute', 'top-0', 'left-0', 'right-0', 'bottom-0', 'overflow-hidden');
 
         quitarElementos.style.display = 'none';
         bajarLetra.style.display = 'text-xs';
 
-        tamanomovil.style.display = 'none';
         mostrarTamano.style.display = 'block';
-        
+        tamanomovil.style.display = 'none';
+
+
         // menu Desplegable
         menuDesplegable.style.display = 'block';
         logoIrun.classList.remove('mt-4');
-        logoIrun.classList.add('mt-24','absolute');
-     
-    
+        logoIrun.classList.add('mt-24', 'absolute');
+
+
 
     }
-   
-    if(anchoVentana >= 1025) {
+
+    if (anchoVentana >= 1025) {
         quitarParaMovil.removeAttribute('style');
         quitarParaMovil.classList.add('grid', 'grid-cols-2');
 
@@ -79,13 +78,13 @@ function verificarAnchoVentana() {
 
         mostrarTamano.style.display = 'none'
         tamanomovil.style.display = 'block';
-        
+
         // menu Desplegable
         menuDesplegable.style.display = 'none';
-        logoIrun.classList.remove('mt-24','absolute');
+        logoIrun.classList.remove('mt-24', 'absolute');
         logoIrun.classList.add('mt-4');
     }
-    
+
 
 
 
@@ -95,19 +94,30 @@ let quitarMostrarMenu = 0;
 
 function menuDesplegablee() {
     console.log(quitarMostrarMenu);
-    // Si quitarMostrarMenu es divisible por 2 y da 0, muestra el menú
-    if (quitarMostrarMenu % 2 === 0) {
-        quitarMenuMovil.style.display = 'block';
-        // Incrementa el contador
-        quitarMostrarMenu++;
-    } else {
-        // Si quitarMostrarMenu no es divisible por 2 y da un número diferente de 0, oculta el menú
-        quitarMenuMovil.style.display = 'none';
-        // Incrementa el contador
-        quitarMostrarMenu++;
+    var anchoVentanaa = window.innerWidth;
+    // Sirve para pillar la pantalla de tablet y asi poder seleccionar en cual hacerlo
+    if (anchoVentanaa <= 1024 && anchoVentanaa >= 641) {
+        // Ejecuta la condicion del contador
+        if (quitarMostrarMenu % 2 === 0) {
+            quitarMenuMovil.style.display = 'block';
+            quitarMostrarMenu++;
+        } else {
+            quitarMenuMovil.style.display = 'none';
+            quitarMostrarMenu++;
+        }
+
+    }
+    // Sirve para pillar la pantalla de movil y asi poder seleccionar en cual hacerlo
+    if (anchoVentanaa <= 640) {
+        // Ejecuta la condicion del contador
+        if (quitarMostrarMenu % 2 === 0) {
+            aaaaa.style.display = 'block';
+            quitarMostrarMenu++;
+        } else {
+            aaaaa.style.display = 'none';
+            quitarMostrarMenu++;
+        }
     }
 }
-
-// Llamar a la función al cargar la página y cada vez que se redimensione la ventana
 window.addEventListener("load", verificarAnchoVentana);
 window.addEventListener("resize", verificarAnchoVentana);

@@ -23,19 +23,20 @@
 <body>
     <!-- Nav bar -->
     <nav class="absolute w-full h-24 bg-red-500 z-50 shadow-lg">
-       
+
         <div class="xs:fixed flex justify-center xs: items-center">
-            <div class="background left-0 fixed mt-32 ml-5" id="menuDesplegable" style="display: none;" onclick="menuDesplegablee()">
+            <div class="background left-0 fixed mt-32 ml-5" id="menuDesplegable" style="display: none;"
+                onclick="menuDesplegablee()">
                 <button class="menu__icon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-              </div>
+            </div>
             <img src="img/logoIrun.png" alt="Irun" width="150px" class="mt-4" id="logoIrun">
-            
+
         </div>
-       
+
         <div class="flex justify-end absolute top-0 right-0 mr-4 text-white mt-9 xs:text-xs">
             <a href="">
                 <div class="" id="bajarLetra">ESP</div>
@@ -108,7 +109,7 @@
                             Trámites
                         </div>
                     </a>
-                    <button onclick="window.location.href = ''"
+                    <button onclick="window.location.href = 'VehiculosTramite.html'"
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -182,7 +183,7 @@
 
                 <!-- Vehiculos -->
                 <li class="flex w-auto justify-between">
-                    <a href="vehiculosTramite.html">
+                    <a href="">
                         <div class="font-normal text-xl flex items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -197,7 +198,7 @@
                             Vehiculos
                         </div>
                     </a>
-                    <button onclick="window.location.href = 'vehiculosTramite.html'"
+                    <button
                         class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -293,244 +294,247 @@
 
     </aside>
 
+
     <!-- Cuadrado que esta entre el nav principal y el lateral -->
     <div class="absolute top-0 left-64 right-0 bottom-0 bg-gray-50 overflow-hidden" id="CuadradoGrande">
-    <!-- Menu en movil -->
-    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-700 text-white" style="display: none ;" id="aaaaa">
-        <div class="ml-4">
-            <div class="mt-36 font-semibold ">David Mangas Hernandez</div>
 
-            <div class="text-gray-200 mb-12">45164365T</div>
-        </div>
-        <ul class="space-y-3.5 font-medium ml-3">
+        <!-- Menu en movil -->
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-700 text-white" style="display: none ;" id="aaaaa">
+            <div class="ml-4">
+                <div class="mt-36 font-semibold ">David Mangas Hernandez</div>
 
-            <li class="flex w-auto justify-between">
-                <a href="index.html">
-                    <div class="font-normal text-xl flex items-center mt-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="w-5 h-5 mr-4">
-                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
-                        Menu
-                    </div>
-                </a>
-                <button onclick="window.location.href = 'index.html'"
-                    class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="transform -rotate-90">
-                        <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                    <span class="sr-only">Minimize</span>
-                </button>
-            </li>
-            <div class="bg-gray-100 h-px w-full mt-6"></div>
-
-            <!-- Tramites -->
-            <li class="flex w-auto justify-between">
-                <a href="">
-                    <div class="font-normal text-xl flex items-center mt-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="h-5 w-5 mr-4">
-                            <path d="M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <path d="M10.42 12.61a2.1 2.1 0 1 1 2.97 2.97L7.95 21 4 22l.99-3.95 5.43-5.44Z"></path>
-                        </svg>
-                        Trámites
-                    </div>
-                </a>
-                <button onclick="window.location.href = 'VehiculosTramite.html'"
-                    class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="transform -rotate-90">
-                        <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                    <span class="sr-only">Minimize</span>
-                </button>
-            </li>
-            <div class="bg-gray-100 h-px w-full mt-6"></div>
-
-            <!-- Pagos -->
-            <li class="flex w-auto justify-between">
-                <a href="">
-                    <div class="font-normal text-xl flex items-center mt-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="w-5 h-5 mr-4">
-                            <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
-                            <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
-                            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
-                        </svg>
-                        Pagos
-                    </div>
-                </a>
-                <button
-                    class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="transform -rotate-90">
-                        <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                    <span class="sr-only">Minimize</span>
-                </button>
-            </li>
-            <div class="bg-gray-100 h-px w-full mt-6"></div>
-
-            <!-- Vivienda  -->
-            <li class="flex w-auto justify-between">
-                <a href="viviendaMenu.html">
-                    <div class="font-normal text-xl flex items-center mt-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="w-5 h-5 mr-4">
-                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
-                            <path d="M9 22v-4h6v4"></path>
-                            <path d="M8 6h.01"></path>
-                            <path d="M16 6h.01"></path>
-                            <path d="M12 6h.01"></path>
-                            <path d="M12 10h.01"></path>
-                            <path d="M12 14h.01"></path>
-                            <path d="M16 10h.01"></path>
-                            <path d="M16 14h.01"></path>
-                            <path d="M8 10h.01"></path>
-                            <path d="M8 14h.01"></path>
-                        </svg>
-                        Vivienda
-                    </div>
-                </a>
-                <button onclick="window.location.href = 'viviendaMenu.html'"
-                    class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="transform -rotate-90">
-                        <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                    <span class="sr-only">Minimize</span>
-                </button>
-            </li>
-            <div class="bg-gray-100 h-px w-full mt-6"></div>
-
-            <!-- Vehiculos -->
-            <li class="flex w-auto justify-between">
-                <a href="">
-                    <div class="font-normal text-xl flex items-center mt-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="w-5 h-5 mr-4">
-                            <path
-                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2">
-                            </path>
-                            <circle cx="7" cy="17" r="2"></circle>
-                            <path d="M9 17h6"></path>
-                            <circle cx="17" cy="17" r="2"></circle>
-                        </svg>
-                        Vehiculos
-                    </div>
-                </a>
-                <button
-                    class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="transform -rotate-90">
-                        <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                    <span class="sr-only">Minimize</span>
-                </button>
-            </li>
-            <div class="bg-gray-100 h-px w-full mt-6"></div>
-
-            <!-- Notificaciones -->
-            <li class="flex w-auto justify-between">
-                <a href="">
-                    <div class="font-normal text-xl flex items-center mt-2">
-                        <!-- <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="w-5 h-5 mr-4"
-              >
-                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="h-5 w-5 mr-4">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                        Notificaciones
-                    </div>
-                </a>
-                <button
-                    class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="transform -rotate-90">
-                        <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                    <span class="sr-only">Minimize</span>
-                </button>
-            </li>
-            <div class="bg-gray-100 h-px w-full mt-6"></div>
-        </ul>
-
-        <!-- Soporte + Otros links -->
-        <div class="fixed bottom-0 left-0 z-50 p-4 mb-3 ml-3">
-            <!-- Contenido de Soporte + Otros links -->
-            <div class="flex flex-col text-white">
-                <a href="" class="hover-underline-animation flex items-center">
-                    <div class="contactoYAyuda text-sm flex items-center">
-                        <span>Novedades</span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="ml-1">
-                            <path
-                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </a>
-                <a href="" class="hover-underline-animation flex items-center">
-                    <div class="contactoYAyuda text-sm flex items-center">
-                        <span>Contacto y Ayuda</span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="ml-1">
-                            <path
-                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </a>
-                <a href="" class="hover-underline-animation flex items-center">
-                    <div class="TerminosYServicios text-sm flex items-center">
-                        <span>Terminos y Servicios</span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="ml-1">
-                            <path
-                                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </a>
+                <div class="text-gray-200 mb-12">45164365T</div>
             </div>
+            <ul class="space-y-3.5 font-medium ml-3">
+
+                <li class="flex w-auto justify-between">
+                    <a href="index.html">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            Menu
+                        </div>
+                    </a>
+                    <button onclick="window.location.href = 'index.html'"
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Tramites -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-5 w-5 mr-4">
+                                <path d="M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <path d="M10.42 12.61a2.1 2.1 0 1 1 2.97 2.97L7.95 21 4 22l.99-3.95 5.43-5.44Z"></path>
+                            </svg>
+                            Trámites
+                        </div>
+                    </a>
+                    <button onclick="window.location.href = 'VehiculosTramite.html'"
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Pagos -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                                <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                            </svg>
+                            Pagos
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Vivienda  -->
+                <li class="flex w-auto justify-between">
+                    <a href="viviendaMenu.html">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                                <path d="M9 22v-4h6v4"></path>
+                                <path d="M8 6h.01"></path>
+                                <path d="M16 6h.01"></path>
+                                <path d="M12 6h.01"></path>
+                                <path d="M12 10h.01"></path>
+                                <path d="M12 14h.01"></path>
+                                <path d="M16 10h.01"></path>
+                                <path d="M16 14h.01"></path>
+                                <path d="M8 10h.01"></path>
+                                <path d="M8 14h.01"></path>
+                            </svg>
+                            Vivienda
+                        </div>
+                    </a>
+                    <button onclick="window.location.href = 'viviendaMenu.html'"
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Vehiculos -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 mr-4">
+                                <path
+                                    d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2">
+                                </path>
+                                <circle cx="7" cy="17" r="2"></circle>
+                                <path d="M9 17h6"></path>
+                                <circle cx="17" cy="17" r="2"></circle>
+                            </svg>
+                            Vehiculos
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+
+                <!-- Notificaciones -->
+                <li class="flex w-auto justify-between">
+                    <a href="">
+                        <div class="font-normal text-xl flex items-center mt-2">
+                            <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 mr-4"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-5 w-5 mr-4">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Notificaciones
+                        </div>
+                    </a>
+                    <button
+                        class="inline-flex items-end justify-end whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-28 h-8 rounded-full mt-1 moverFlechaMenu mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transform -rotate-90">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <span class="sr-only">Minimize</span>
+                    </button>
+                </li>
+                <div class="bg-gray-100 h-px w-full mt-6"></div>
+            </ul>
+
+            <!-- Soporte + Otros links -->
+            <div class="fixed bottom-0 left-0 z-50 p-4 mb-3 ml-3">
+                <!-- Contenido de Soporte + Otros links -->
+                <div class="flex flex-col text-white">
+                    <a href="" class="hover-underline-animation flex items-center">
+                        <div class="contactoYAyuda text-sm flex items-center">
+                            <span>Novedades</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="hover-underline-animation flex items-center">
+                        <div class="contactoYAyuda text-sm flex items-center">
+                            <span>Contacto y Ayuda</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="hover-underline-animation flex items-center">
+                        <div class="TerminosYServicios text-sm flex items-center">
+                            <span>Terminos y Servicios</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </div>
-
-    </div>
-
-        <!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------------------->
 
         <!-- Notificaciones en pequeño -->
-        <div class="h-full mt-32  bg-card text-card-foreground shadow-sm w-auto mx-auto"
+        <div class="h-full mt-20  bg-card text-card-foreground shadow-sm w-auto mx-auto"
             style="display: none; overflow-y: auto;" id="mostrarTamano">
-            <div class="flex ml-7 mt-5">
+
+
+            <div class="flex ml-7 mt-20" id="porfa">
                 <div class="max-w-xs">
                     <nav aria-label="Breadcrumb">
                         <ol class="flex items-center gap-1 text-sm text-gray-600">
@@ -555,143 +559,87 @@
                                 </svg>
                             </li>
 
-
-
                             <li>
                                 <a href="vehiculosTramite.html" class="block transition hover:text-gray-700"> Tramites
                                     Vehiculo </a>
-                            </li>
-                            <li class="rtl:rotate-180">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </li>
-
-                            <li>
-                                <a href="vehiculosMatricula.html" class="block transition hover:text-gray-700"> IVTM
-                                </a>
-                            </li>
-                            <li class="rtl:rotate-180">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </li>
-
-                            <li>
-                                <a href="#" class="block transition hover:text-gray-700"> 1234-ABC </a>
                             </li>
 
 
 
                         </ol>
                     </nav>
-                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Ultimo
-                        Tramite IVTM</div>
-                    <div class="mt-3 text-gray-500 text-sm">En este apartado te mostrar el ultimo recivo IVTM del
-                        vehiculo para consultar mas dale al link que pone: "Ver todos los recibos IVTM"</div>
+                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Tramites
+                        Vehiculos
+                    </div>
+                    <div class="mt-4 text-gray-500 text-base">En este apartado encontrarás tus vehículos que tienes en
+                        disposición y sus datos respectivos con IVTM, OTA y las Pilonas. </div>
                 </div>
             </div>
 
 
-            <div class="justify-center w-auto mx-auto mt-10 ml-16 mr-16" id="interStyle">
-                <style>
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6 {
-                        font-family: 'Inter', sans-serif;
-                        --font-sans: 'Inter';
-                        font-size: 1.5rem;
-                    }
-
-                    #interStyle {
-                        font-family: 'Inter', sans-serif;
-                        --font-sans: 'Inter';
-                    }
-                </style>
-                <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col p-6 w-full overflow-y-auto gap-4"
-                    data-v0-t="card" style="max-height: 520px;">
-                    <div class="space-y-1.5 p-6 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
-                        <div class="flex flex-col items-start gap-1">
-                            <p class="text-sm text-muted-foreground">Coche</p>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
-                                Mercedes A 45S
-                            </h3>
-                        </div>
-                        <div class="flex flex-col items-start gap-1">
-                            <p class="text-sm text-muted-foreground">Matricula</p>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
-                                1234-ABC
-                            </h3>
-                        </div>
-                        <div class="flex flex-col items-start gap-1">
-                            <p class="text-sm text-muted-foreground">Propietario</p>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
-                                David Mangas
-
-                            </h3>
-
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col gap-4 ">
-                        <div class="flex flex-col gap-1">
-                            <div class="flex flex-col gap-1">
-                                <div class="flex flex-col gap-1">
-                                    <p class="text-sm text-muted-foreground flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2">
-                                            <rect width="16" height="12" x="2" y="5" rx="2"></rect>
-                                            <line x1="2" x2="18" y1="10" y2="10"></line>
-                                        </svg>
-                                        Referencia
-                                    </p>
-                                </div>
+            <div class="justify-center w-auto mx-auto mt-10 ml-3 mr-3" id="porfaa">
+                <a href="vehiculosMatricula.html" class="enlaceAnimado">
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
+                        <div class="flex items-center gap-4">
+                            <div class="rounded-full overflow-hidden border border-gray-200"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
+                                    style="width: 100%; height: 100%; object-fit: cover;" />
                             </div>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
-                                <!-- Cambiado a text-lg -->
-                                00490909468432828470
-                            </h3>
-                            <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
-                        </div>
-                        <div class="flex flex-col gap-1">
-                            <p class="text-sm text-muted-foreground">Valor</p>
-                            <h3 class="whitespace-nowrap text-lg font-semibold leading-none tracking-tight">
-                                <!-- Cambiado a text-lg -->
-                                300€
-                            </h3>
-                            <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
-                        </div>
-                        <div class="flex flex-col gap-1">
-                            <p class="text-sm text-muted-foreground">Descripción</p>
-                            <h3 class="whitespace-normal text-base font-semibold leading-tight tracking-tight max-w-full overflow-hidden"
-                                style="line-height: 1.5;"> <!-- Cambiado a text-base -->
-                                dauwdhwahdihwa idhwai hdiwah dihwa iodhawioh diwoah didhwa iohsdiowahsd woipah dsihwioah
-                                sidhiwa hio hdis fugASUG DCWIA HRDWIAHDCIWHA DIHWAIUHDWA
-                            </h3>
-                            <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
-                        </div>
-                        <a href="" class="hover-underline-animationBlack mt-3 w-48 flex items-center">
-                            <div class="text-sm text-gray-700 hover:text-gray-500">Ver todos los recibos IVTM</div>
-                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class="ml-1">
-                                <path
-                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                    fill="black" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            <div class="grid gap-1.5">
+                                <h3 class="font-medium text-lg">IVTM</h3>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                style="width: 20px; height: 20px;">
+                                <path d="m12 5 7 7-7 7"></path>
                             </svg>
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </a>
+                <a href="informacionOTA.html" class="enlaceAnimado">
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
+                        <div class="flex items-center gap-4">
+                            <div class="rounded-full overflow-hidden border border-gray-200"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
+                                    style="width: 100%; height: 100%; object-fit: cover;" />
+                            </div>
+                            <div class="grid gap-1.5">
+                                <h3 class="font-medium text-lg">OTA</h3>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                style="width: 20px; height: 20px;">
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="informacionPilonas.html" class="enlaceAnimado">
+                    <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2">
+                        <div class="flex items-center gap-4">
+                            <div class="rounded-full overflow-hidden border border-gray-200"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/ejemplo.jpg" width="60" height="60" alt="App icon"
+                                    style="width: 100%; height: 100%; object-fit: cover;" />
+                            </div>
+                            <div class="grid gap-1.5">
+                                <h3 class="font-medium text-lg">Pilonas</h3>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                style="width: 20px; height: 20px;">
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
 
+            </div>
 
             <div class="mb-64 w-1 h1"></div>
 
@@ -860,151 +808,129 @@
                                     </svg>
                                 </li>
 
-
-
                                 <li>
                                     <a href="vehiculosTramite.html" class="block transition hover:text-gray-700">
                                         Tramites Vehiculo </a>
-                                </li>
-                                <li class="rtl:rotate-180">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </li>
-
-                                <li>
-                                    <a href="vehiculosMatricula.html" class="block transition hover:text-gray-700"> IVTM
-                                    </a>
-                                </li>
-                                <li class="rtl:rotate-180">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="block transition hover:text-gray-700"> 1234-ABC </a>
                                 </li>
 
 
 
                             </ol>
                         </nav>
-                        <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Ultimo
-                            Tramite IVTM
+                        <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Tramites
+                            Vehiculos
                         </div>
+                        <div class="mt-4 text-gray-500 text-base">En este apartado encontrarás tus vehículos que tienes
+                            en
+                            disposición y sus datos respectivos con IVTM, OTA y las Pilonas.</div>
                     </div>
                 </div>
-                <div class="justify-center w-auto mx-auto mt-10 ml-16 mr-16" id="interStyle">
-                    <style>
-                        h1,
-                        h2,
-                        h3,
-                        h4,
-                        h5,
-                        h6 {
-                            font-family: 'Inter', sans-serif;
-                            --font-sans: 'Inter';
-                        }
-                    </style>
-                    <style>
-                        #interStyle {
-                            font-family: 'Inter', sans-serif;
-                            --font-sans: 'Inter';
-                        }
-                    </style>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col p-6 w-full overflow-y-auto gap-4"
-                        data-v0-t="card" style="max-height: 520px;">
-                        <div
-                            class="space-y-1.5 p-6 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
-                            <div class="flex flex-col items-start gap-1">
-                                <p class="text-sm text-muted-foreground">Coche</p>
-                                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                                    Mercedes A 45S
-                                </h3>
-                            </div>
-                            <div class="flex flex-col items-start gap-1">
-                                <p class="text-sm text-muted-foreground">Matricula</p>
-                                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                                    1234-ABC</h3>
-                            </div>
-                            <div class="flex flex-col items-start gap-1">
-                                <p class="text-sm text-muted-foreground">Propietario</p>
-                                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">David
-                                    Mangas</h3>
-                            </div>
+                <div class="justify-center w-auto mx-auto mt-10 ml-16 mr-16" >
 
-                        </div>
-                        <div class="p-6 flex flex-col gap-4 ">
-                            <div class="flex flex-col gap-1">
-                                <div class="flex flex-col gap-1">
-                                    <div class="flex flex-col gap-1">
-                                        <p class="text-sm text-muted-foreground flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="w-4 h-4 inline-block mr-1">
-                                                <path
-                                                    d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z">
-                                                </path>
-                                                <path d="M7 7h.01"></path>
-                                            </svg>
-                                            Referencia
-                                        </p>
+                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">IVTM <a
+                            href="vehiculosMatricula.html" class="enlaceAnimado">
+                            <div
+                                class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2 mt-4">
+                                <div class="flex items-center gap-4">
+
+                                    <div class="grid gap-1.5 ml-3">
+                                        <h3 class="font-medium text-lg">Recivo | 124125321533</h3>
+                                        <h3 class="text-base">20/11/2024</h3>
+                                        <h3 class="">IVTM</h3>
                                     </div>
-
-                                </div>
-
-
-                                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                                    00490909468432828470
-                                </h3>
-                                <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <p class="text-sm text-muted-foreground flex items-center">
+                                    
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="w-5 h-5 mr-2">
-                                        <rect width="16" height="12" x="2" y="5" rx="2"></rect>
-                                        <line x1="2" x2="18" y1="10" y2="10"></line>
-                                    </svg> Importe
-                                </p>
-                                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">300€
-                                </h3>
-                                <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
+                                        stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                        style="width: 20px; height: 20px;">
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="flex flex-col gap-1">
-                                <p class="text-sm text-muted-foreground">Descripción</p>
-                                <h3 class="whitespace-normal text-lg font-semibold leading-tight tracking-tight max-w-full overflow-hidden"
-                                    style="line-height: 1.5;">
-                                    dauwdhwahdihwa idhwai hdiwah dihwa iodhawioh diwoah didhwa iohsdiowahsd woipah
-                                    dsihwioah sidhiwa hio hdis fugASUG DCWIA HRDWIAHDCIWHA DIHWAIUHDWA
-                                </h3>
-                                <div class="h-2 w-full bg-gray-100 rounded-md dark:bg-gray-800"></div>
-                            </div>
+                        </a>
+                        <a
+                        href="vehiculosMatricula.html" class="enlaceAnimado">
+                        <div
+                            class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2 mt-4">
+                            <div class="flex items-center gap-4">
 
-                            <a href="" class="hover-underline-animationBlack mt-3 w-48 flex items-center">
-                                <div class="text-sm text-gray-700 hover:text-gray-500">Ver todos los recibos IVTM</div>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="ml-1">
-                                    <path
-                                        d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                                        fill="black" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                <div class="grid gap-1.5 ml-3">
+                                    <h3 class="font-medium text-lg">Recivo | 124125321533</h3>
+                                    <h3 class="text-base">20/11/2024</h3>
+                                    <h3 class="">IVTM</h3>
+                                </div>
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                    style="width: 20px; height: 20px;">
+                                    <path d="m12 5 7 7-7 7"></path>
                                 </svg>
-                            </a>
-
-
+                            </div>
                         </div>
+                    </a>
                     </div>
 
+                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">OTA <a
+                            href="vehiculosMatricula.html" class="enlaceAnimado">
+                            <div
+                                class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2 mt-4">
+                                <div class="flex items-center gap-4">
+
+                                    <div class="grid gap-1.5">
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                    </div>
+                                    <div class="grid gap-1.5">
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                    </div>
+                                    <div class="grid gap-1.5">
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                        style="width: 20px; height: 20px;">
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a></div>
+                    <div class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight mt-12">Pilonas
+                        <a href="vehiculosMatricula.html" class="enlaceAnimado">
+                            <div class="border border-gray-200 rounded-lg p-4 text-sm w-full xs:max-w-xs w-auto mb-2 mt-4">
+                                <div class="flex items-center gap-4">
+                                    
+                                    <div class="grid gap-1.5">
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                    </div>
+                                    <div class="grid gap-1.5">
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                    </div>
+                                    <div class="grid gap-1.5">
+                                        <h3 class="font-medium text-lg">IVTM</h3>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-4 w-4 ml-auto opacity-50 animacionCardFlecha"
+                                        style="width: 20px; height: 20px;">
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a></div>
+
+
+
                 </div>
+
+
+
+
+
 
 
             </div>
